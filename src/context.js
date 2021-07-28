@@ -132,7 +132,7 @@ export default class ScubaProvider extends Component {
   calculateTotal = () => {
     let subTotal = 0;
     this.state.basket.map((item) => (subTotal += item.total));
-    const productTax = subTotal * 0;
+    const productTax = subTotal * 0.14;
     const tax = parseFloat(productTax.toFixed(2));
     const finalCost = subTotal + tax;
     this.setState(() => {
