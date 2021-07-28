@@ -668,4 +668,38 @@ textarea {
   .about-img {
     margin-bottom: -20px;
   }
+  .link-list li {
+    margin-right: 30px;
+  }
+  .form-container {
+    max-width: 100%;
+  }
+  iframe {
+    max-width: 100%;
+  }
 }
+@media screen and (max-width: 450px) {
+  .form-container {
+    max-width: 350px;
+  }
+  iframe {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-container {
+    width: 300px;
+  }
+  iframe {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form-container {
+    width: 270px;
+  }
+  iframe {
+    width: 270px;
+  }
+}
+
