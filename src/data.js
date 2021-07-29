@@ -465,7 +465,13 @@ export const divingGear = [
     count: 0,
     total: 0,
     slug: "typhoon-quantum",
-    features: [],
+    features: [
+      "HD Superflex 4mm Neoprene",
+      "Armourtex Shell",
+      "Glideskin Neoprene Seals",
+      "Thermolined Boots",
+      "Apeks Low Profile Valves",
+    ],
   },
 ];
 
