@@ -41,6 +41,8 @@ export default class ScubaProvider extends Component {
     );
     let suitInventory = scubaProducts.filter((item) => item.type === "suit");
     let maxPrice = Math.max(...scubaProducts.map((product) => product.price));
+    let cart = localStorage.getItem("basketData");
+    let final = localStorage.getItem("productTotal");
     this.setState(
       {
         products: scubaProducts,
@@ -52,6 +54,8 @@ export default class ScubaProvider extends Component {
         suits: suitInventory,
         price: maxPrice,
         maxPrice,
+        basket: JSON.parse(cart) ? JSON.parse(cart) : [],
+        total: JSON.parse(final) ? JSON.parse(final) : [],
       },
       () => this.calculateTotal()
     );
@@ -77,6 +81,13 @@ export default class ScubaProvider extends Component {
     });
     return tempItems;
   }
+  
+  saveBasketData = () => {
+   localStorage.setItem("basketData", JSON.stringify(this.state.basket));
+   localStorage.setItem("subTotal", JSON.stringify(this.state.productSum));
+   localStorage.setItem("productTax", JSON.stringify(this.state.tax));
+   localStorage.setItem("productTotal", JSON.stringify(this.state.total));
+  };
 
   getProduct = (slug) => {
     let tempProducts = [...this.state.products];
@@ -107,6 +118,7 @@ export default class ScubaProvider extends Component {
       },
       () => {
         this.calculateTotal();
+        this.saveBasketData();
       }
     );
   };
@@ -153,6 +165,7 @@ export default class ScubaProvider extends Component {
       },
       () => {
         this.setProducts();
+        this.saveBasketData();
       }
     );
   };
@@ -176,6 +189,7 @@ export default class ScubaProvider extends Component {
       },
       () => {
         this.calculateTotal();
+        this.saveBasketData();
       }
     );
   };
@@ -196,6 +210,7 @@ export default class ScubaProvider extends Component {
       },
       () => {
         this.calculateTotal();
+        this.saveBasketData();
       }
     );
   };
@@ -219,6 +234,7 @@ export default class ScubaProvider extends Component {
         },
         () => {
           this.calculateTotal();
+          this.saveBasketData();
         }
       );
     }
