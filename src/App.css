@@ -252,7 +252,7 @@ a {
 }
 
 .product-footer {
-  padding: 0.5rem 0.3rem;
+  padding: 0 0.3rem;
   text-transform: capitalize;
   text-align: center;
 }
