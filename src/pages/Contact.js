@@ -32,7 +32,7 @@ export default function Contact() {
         <iframe
           title="diving shop map"
           src="https://maps.google.com/maps?q=Miami%20Palmetto%20bay%20SW176st&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          width="430"
+          width="100%"
           height="355"
           frameBorder="0"
           style={{ border: 0 }}
