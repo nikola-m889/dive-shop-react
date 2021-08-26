@@ -29,19 +29,6 @@ export default function About() {
         manufacturer would love to have their products in our shop.
       </p>
 
-      <p>
-        Diving Shop carries the equipment we trust and believe in. Any scuba
-        manufacturer would love to have their products in our shop. Lorem ipsum
-        dolor sit amet consectetur, adipisicing elit. Quia neque cumque ipsa
-        itaque, illo, eligendi ipsum unde exercitationem blanditiis, praesentium
-        optio iste eveniet tempore? Eum voluptate, ratione vel dolorum eveniet
-        iusto quos reprehenderit blanditiis et cumque quo similique nulla dolore
-        animi reiciendis minus nihil. Iste incidunt dolores quibusdam non
-        necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Cumque asperiores tempora iure laboriosam nulla porro beatae, tenetur
-        accusamus odit commodi.
-      </p>
-
       <div className="about-center"></div>
     </div>
   );
