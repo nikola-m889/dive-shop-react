@@ -120,5 +120,11 @@ const FooterStyle = styled.div`
       padding: 0;
       margin-left: 0px;
     }
+    .footer-menu h3 {
+      text-align: center;
+    }
+    .footer-links .footer-sm {
+     margin-left: 42px;
+    }
   }
 `;
